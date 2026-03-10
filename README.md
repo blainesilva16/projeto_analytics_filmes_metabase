@@ -75,7 +75,7 @@ WITH base AS (
   SELECT 
     EXTRACT(YEAR FROM primeira_avaliacao) AS ano_entrada,
     EXTRACT(YEAR FROM ultima_avaliacao) AS ano_saida
-  FROM `desafio-1-dpt.analytics_dataset_desafio_1_dpt.vw_user_activity`
+  FROM `projeto-id.analytics_dataset.vw_user_activity`
 ),
 entradas AS (
   SELECT ano_entrada AS ano, COUNT(*) AS qtd_primeiras
